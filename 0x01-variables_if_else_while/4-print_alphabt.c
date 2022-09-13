@@ -1,24 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - print lowercase alphabet except q and e
+ * main - print lower alpha except "q" and "e"
  *
  * Return: 0
- *
  */
 
 int main(void)
 {
 	char c;
 
-	c = 'a';
+	c == 'a';
 
-	while (c < 123 && c != 'q' && c != 'e')
+	while (c < '{')
 	{
-		putchar(c);
+		if (c != 'q' && c != 'e')
+		{
+			putchar(c);
+		}
 		c++;
 	}
-	putchar('\n');
-
+		putchar('\n');
 	return (0);
 }
