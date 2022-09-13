@@ -12,7 +12,7 @@ int main(void)
 
 	c == 'a';
 
-	while (c < 'z')
+	while (c < 123)
 	{
 		if (c != 'q' && c != 'e')
 		{
