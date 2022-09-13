@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Print all the numbers of base '16' in lowercase
+ * main - Print all hex number in lowercase
  *
  * Return: 0
  *
@@ -11,11 +11,17 @@ int main(void)
 {
 	int c;
 
-	c = '0';
-
-	while (c < 17)
+	c = 48;
+	while (c < 58)
 	{
-		putchar("%x", c);
+		putchar(c);
+		c++;
+	}
+
+	c = 97;
+	while (c < 103)
+	{
+		putchar(c);
 		c++;
 	}
 	putchar('\n');
