@@ -3,22 +3,18 @@
 /**
  * main - Entry point
  *
- * Return: 0
+ * Return: Always 0 (Success)
  *
  */
 
 int main(void)
 {
+		char c;
 
-	char alphabet;
+		for (c = 'a'; c <= 'z'; c++)
+			putchar(c);
+			putchar("\n");
 
-	alphabet = 'a';
-	putchar("Lowercase alphabets:\n");
-	while (alphabet <= 'z')
-	{
-		putchar("$c\n", alphabet);
-		alphabet++;
-	}
 	return (0);
 
 }
