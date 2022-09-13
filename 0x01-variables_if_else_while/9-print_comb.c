@@ -19,8 +19,8 @@ int main(void)
 
 		if (i != 58)
 		{
-			putchar(",");
-			putchar(" ");
+			putchar(',');
+			putchar(' ');
 		}
 
 	}
