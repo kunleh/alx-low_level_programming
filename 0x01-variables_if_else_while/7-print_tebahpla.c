@@ -13,7 +13,7 @@ int main(void)
 
 	c = 'z';
 
-	while (c < 123)
+	while (c < 96)
 	{
 		putchar(c);
 		c--;
