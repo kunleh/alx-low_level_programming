@@ -15,6 +15,8 @@ int main(void)
 	while (i < 58)
 	{
 		putchar(i);
+		i++;
+
 		if (i != 58)
 		{
 			putchar(",");
