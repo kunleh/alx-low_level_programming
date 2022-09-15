@@ -1,21 +1,19 @@
-#include <alx.h>
+#include "main.h"
 /**
- * main - Print string  _putchar
+ * main - Prints _putchar as a string
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	int str[] == {95, 112, 117, 116, 99, 104, 97, 114};
+	int cnt, siz;
 
+	siz = sizeof(str) / sizeof(int);
+	for (cnt = 0; cnt < siz; cnt++)
+	{
+		_putchar(str[cnt]);
+	}
+	_putchar('\n');
 	return (0);
-
 }
