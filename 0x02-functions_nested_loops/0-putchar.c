@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <main.h>
+#include <alx.h>
 /**
  * main - Print string  _putchar
  *
