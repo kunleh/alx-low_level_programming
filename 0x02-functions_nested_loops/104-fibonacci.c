@@ -16,7 +16,7 @@ int main(void)
 
 	for (i = 0; i <= 97; i++)
 	{
-		printf("%lu ,", num1);
+		printf("%lu", num1);
 		numx = num1 + num2;
 		num1 = num2;
 		num2 = numx;
