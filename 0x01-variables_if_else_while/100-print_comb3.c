@@ -1,48 +1,36 @@
 #include <stdio.h>
-
 /**
- * main - print possible combinaiton of two two digit
+ * main - print numbers from 00 to 99
  *
- * Return: (0) for Success
+ * Return: 0 on success
  */
-
 int main(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int i = '0';
+	int j = '0';
 
-	for (i = 48; i < 58; i++)
+	while (i <= '9')
 	{
-		for  (j = 48; j < 58; j++)
+		while (j <= '9')
 		{
-			for (k = i; k < 58; k++)
+			if (!(i > j || i == j))
 			{
-				if (k > i)
-					l = 48;
-				else
-					l = j + i;
-
-				for (; l < 58; l++)
+				putchar(i);
+				putchar(j);
+				if (i == '8' && j == '9')
 				{
-					putchar(i);
-					putchar(j);
+					putchar('\n');
+				}
+				else
+				{
+					putchar(',');
 					putchar(' ');
-					putchar(k);
-					putchar(l);
-
-					if (!(i == 57 && j == 56 && k == 57 && l == 57))
-					{
-						putchar(',');
-						putchar(' ');
-					}
 				}
 			}
+			j++;
 		}
+		j = '0';
+		i++;
 	}
-	putchar('\n');
-
 	return (0);
-
 }
