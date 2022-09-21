@@ -14,17 +14,12 @@ int main(void)
 	num1 = 1;
 	num2 = 2;
 
-	for (i = 0; i <= 97; i++)
+	for (i = 0; i <= 98; i++)
 	{
 		printf("%lu ,", num1);
 		numx = num1 + num2;
 		num1 = num2;
 		num2 = numx;
-
-		if (i != 97)
-			printf(", ");
 	}
 		printf("\n");
-
-		return (0);
 }
