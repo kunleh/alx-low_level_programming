@@ -1,7 +1,6 @@
 #include <stdio.h>
-
 /**
- * main - print sum of even Fib nums greater 4million
+ * main - prints first 98 fibonacci starting with 1 and 2
  *
  * Return: 0 on Success
  */
@@ -23,7 +22,7 @@ int main(void)
 
 		if (i != 97)
 			printf(", ");
-														}
+	}
 	printf("\n");
 	return (0);
 }
