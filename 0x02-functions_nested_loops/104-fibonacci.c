@@ -10,7 +10,6 @@ int main(void)
 	unsigned long num1;
 	unsigned long num2;
 	unsigned long numx;
-	unsigned long sum;
 
 	num1 = 1;
 	num2 = 2;
