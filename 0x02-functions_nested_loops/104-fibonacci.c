@@ -7,16 +7,15 @@
 int main(void)
 {
 	int i;
-	unsigned long num1;
-	unsigned long num2;
-	unsigned long numx;
 
-	num1 = 1;
-	num2 = 2;
+	unsigned long num1 = 1;
+	unsigned long num2 = 2;
+	unsigned long numx;
 
 	for (i = 0; i <= 97; i++)
 	{
 		printf("%lu", num1);
+
 		numx = num1 + num2;
 		num1 = num2;
 		num2 = numx;
