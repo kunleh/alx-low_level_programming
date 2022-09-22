@@ -1,36 +1,48 @@
 #include "main.h"
 /**
- * print_number - prints a number
- * @n: Input number
+ * print_number - print integer
+ * @n: number to print
  */
-
 void print_number(int n)
 {
-long len, res, i, temp, expo;
+	int zero_switch = 0;
 
-res = n;
-expo = len =  1;
-/*Check negatives*/
-if (res < 0)
-{
-res *= -1;
-_putchar('-');
-}
-/**/
-temp = res;
-while (temp >= 10)
-{
-len++;
-temp /= 10;
-}
-/*Create Exponent*/
-for (i = 1; i < len; i++)
-expo *= 10;
-/*Main */
-while (expo > 1)
-{
-_putchar((res / expo) % 10 + '0');
-expo /= 10;
-}
-_putchar(res % 10 + '0');
+	(n < 0) ? _putchar('-') : (n *= -1);
+	if ((n / 1000000000) % 10 != 0)
+		zero_switch = 1;
+	if (zero_switch == 1)
+		_putchar(-(n / 1000000000) % 10 + '0');
+	if ((n / 100000000) % 10 != 0)
+		zero_switch = 1;
+	if (zero_switch == 1)
+		_putchar(-(n / 100000000) % 10 + '0');
+	if ((n / 10000000) % 10 != 0)
+		zero_switch = 1;
+	if (zero_switch == 1)
+		_putchar(-(n / 10000000) % 10 + '0');
+	if ((n / 1000000) % 10 != 0)
+		zero_switch = 1;
+	if (zero_switch == 1)
+		_putchar(-(n / 1000000) % 10 + '0');
+	if ((n / 100000) % 10 != 0)
+		zero_switch = 1;
+	if (zero_switch == 1)
+		_putchar(-(n / 100000) % 10 + '0');
+	if ((n / 10000) % 10 != 0)
+		zero_switch = 1;
+	if (zero_switch == 1)
+		_putchar(-(n / 10000) % 10 + '0');
+	if ((n / 1000) % 10 != 0)
+		zero_switch = 1;
+	if (zero_switch == 1)
+		_putchar(-(n / 1000) % 10 + '0');
+	if ((n / 100) % 10 != 0)
+		zero_switch = 1;
+	if (zero_switch == 1)
+		_putchar(-(n / 100) % 10 + '0');
+	if ((n / 10) % 10 != 0)
+		zero_switch = 1;
+	if (zero_switch == 1)
+		_putchar(-(n / 10) % 10 + '0');
+	_putchar((n % 10) * -1 + '0');
 }
